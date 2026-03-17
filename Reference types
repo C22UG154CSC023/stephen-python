@@ -1,0 +1,41 @@
+#iterator
+'''l = (1,2,3,6)
+v = iter(l)
+print(v)
+print(next(v))
+print(next(v))'''
+
+#Generator
+'''
+def demo():
+    a=10
+    b=20
+    yield b
+    yield a
+d=demo()
+print(next(d))
+print(next(d))
+'''
+
+#closure
+'''
+def outer(x):
+    n = x
+    def inner():
+        return n+10
+    return inner()
+x=25
+print(outer(x))'''
+
+
+#decorator
+'''def greeting(n):
+    x=n
+    def content():
+        print("Hello,sir")
+        x()
+        print("Nice to meet you,sir")
+    content()
+@greeting
+def name():
+        print("i am stephen")'''
